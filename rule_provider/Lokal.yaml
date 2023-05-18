@@ -1,0 +1,272 @@
+payload:
+  # > by.U App
+  # Client Patch
+  - DOMAIN-KEYWORD,byu.id
+
+  # > myIM3 App
+  # Client Patch
+  - DOMAIN-KEYWORD,myim3api
+  - DOMAIN-KEYWORD,myim3banner
+  - DOMAIN-KEYWORD,myim3-he.indosatooredoo
+  - DOMAIN-KEYWORD,media.kloc
+  - DOMAIN-KEYWORD,indosatooredoo
+
+  # > MyTelkomsel App
+  # Client Patch
+  - DOMAIN-KEYWORD,telkomsel.com
+  - DOMAIN-KEYWORD,prd-idn-telkomsel-dap.timwe.com
+  - DOMAIN-KEYWORD,mobile.useinsider.com
+  - DOMAIN-KEYWORD,webportals.cachefly.net
+
+  # > myXL App
+  # Client Patch
+  - DOMAIN-KEYWORD,xlaxiata
+  - DOMAIN-KEYWORD,xlaxiata2
+  - DOMAIN-KEYWORD,xlaxiata-resources
+
+  # > GOOGLE MEET, CLASSROOM, HANGOUTS, MAPS
+  - DOMAIN-KEYWORD,meet.google.com
+  - DOMAIN-SUFFIX,meetings.googleapis.com
+  - DOMAIN-SUFFIX,classroom.google.com
+  - DOMAIN-SUFFIX,hangouts.googleapis.com
+  # MAPS
+  - DOMAIN-SUFFIX,userlocation.googleapis.com
+  - DOMAIN-SUFFIX,stun.l.google.com
+  - DOMAIN-SUFFIX,instantmessaging-pa.googleapis.com
+  - DOMAIN-SUFFIX,mtalk.google.com
+  - DOMAIN-SUFFIX,mobilemaps.googleapis.com
+  - DOMAIN-SUFFIX,mobilemaps-pa-gz.googleapis.com
+  - DOMAIN-SUFFIX,clients4.google.com
+  - DOMAIN-SUFFIX,android.googleapis.com
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com
+  - DOMAIN-SUFFIX,lh3.googleusercontent.com
+  - DOMAIN-SUFFIX,lh5.googleusercontent.com
+  - DOMAIN-SUFFIX,apis.google.com
+  - DOMAIN-SUFFIX,peoplestack-pa.googleapis.com
+  - DOMAIN-SUFFIX,gz0.googleusercontent.com
+  - DOMAIN-SUFFIX,geoar.googleapis.com
+  - DOMAIN-SUFFIX,streetviewpixels-pa.googleapis.com
+  - DOMAIN-SUFFIX,maps.gstatic.com
+  - DOMAIN-SUFFIX,maps.google.com
+  - DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
+  # CLASSROOM
+  - DOMAIN-SUFFIX,dns.google
+  - DOMAIN-SUFFIX,clients3.google.com
+  - DOMAIN-SUFFIX,notifications-pa.googleapis.com
+  # PORTS
+  - DST-PORT,19302
+  - DST-PORT,19305
+
+  # > ZOOM
+  - DOMAIN-SUFFIX,zoom.us
+  - DOMAIN-SUFFIX,google.zoom.us
+  - DOMAIN-SUFFIX,us02st1.zoom.us
+  - DOMAIN-SUFFIX,us03st1.zoom.us
+  - DOMAIN-SUFFIX,us04st1.zoom.us
+  - DOMAIN-SUFFIX,us02st2.zoom.us
+  - DOMAIN-SUFFIX,us03st2.zoom.us
+  - DOMAIN-SUFFIX,us04st2.zoom.us
+  - DOMAIN-SUFFIX,us02st3.zoom.us
+  - DOMAIN-SUFFIX,us03st3.zoom.us
+  - DOMAIN-SUFFIX,us04st3.zoom.us
+  - DOMAIN-SUFFIX,us02web.zoom.us
+  - DOMAIN-SUFFIX,zoom.ada.support
+  - DOMAIN-SUFFIX,st1.zoom.us
+  - DOMAIN-SUFFIX,us02zpns.zoom.us
+  - DOMAIN-SUFFIX,us04xmppapi.zoom.us
+  - DOMAIN-SUFFIX,us04st1.zoom.us
+  - DOMAIN-SUFFIX,us04xmpp1.zoom.us
+  - DOMAIN-SUFFIX,xmpp013.zoom.us
+  - DOMAIN-SUFFIX,logfiles.zoom.us
+  - DOMAIN-SUFFIX,cdn.zoom.us
+  - DOMAIN-SUFFIX,zoom-general.s3.amazonaws.com
+  - DOMAIN-SUFFIX,zoomca193-123-14-89mmr.cloud.zoom.us
+  - DOMAIN-SUFFIX,zoomca193-123-1-56zc.cloud.zoom.us
+  - DST-PORT,8801
+  - DST-PORT,8802
+  - DST-PORT,3478
+  - DST-PORT,3479
+
+  #HoYoVerse
+  - DOMAIN-SUFFIX,genshinimpact.com
+  - DOMAIN-SUFFIX,honkaiimpact3.com
+  - DOMAIN-SUFFIX,honkaistarrail.com
+  - DOMAIN-SUFFIX,hoyo.link
+  - DOMAIN-SUFFIX,hoyolab.com
+  - DOMAIN-SUFFIX,hoyoverse.com
+  - DOMAIN-SUFFIX,n0vadesktop.com
+  - DOMAIN-SUFFIX,mihoyo.com
+
+  #Steam
+  - DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
+  - DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
+  - DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
+  - DOMAIN-SUFFIX,csgo.wmsj.cn
+  - DOMAIN-SUFFIX,dl.steam.clngaa.com
+  - DOMAIN-SUFFIX,dl.steam.ksyna.com
+  - DOMAIN-SUFFIX,dota2.wmsj.cn
+  - DOMAIN-SUFFIX,fanatical.com
+  - DOMAIN-SUFFIX,humblebundle.com
+  - DOMAIN-SUFFIX,playartifact.com
+  - DOMAIN-SUFFIX,s.team
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+  - DOMAIN-SUFFIX,steam-api.com
+  - DOMAIN-SUFFIX,steam-chat.com
+  - DOMAIN-SUFFIX,steambroadcast.akamaized.net
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,steamcontent.tnkjmec.com
+  - DOMAIN-SUFFIX,steamgames.com
+  - DOMAIN-SUFFIX,steampipe.akamaized.net
+  - DOMAIN-SUFFIX,steampowered.com
+  - DOMAIN-SUFFIX,steampowered.com.8686c.com
+  - DOMAIN-SUFFIX,steamstat.us
+  - DOMAIN-SUFFIX,steamstatic.com
+  - DOMAIN-SUFFIX,steamstatic.com.8686c.com
+  - DOMAIN-SUFFIX,steamstore-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamunlocked.net
+  - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
+  - DOMAIN-SUFFIX,underlords.com
+  - DOMAIN-SUFFIX,valvesoftware.com
+  - DOMAIN-SUFFIX,wmsjsteam.com
+  - DOMAIN-KEYWORD,steambroadcast
+  - DOMAIN-KEYWORD,steamstore
+  - DOMAIN-KEYWORD,steamuserimages
+
+  #Microsoft Teams
+  - DOMAIN,teams.events.data.microsoft.com
+  - DOMAIN-SUFFIX,teams.cdn.live.net
+  - DOMAIN-SUFFIX,teams.live.com
+  - DOMAIN-SUFFIX,teams.microsoft.com
+
+  # > RUANGGURU
+  - DOMAIN-SUFFIX,ruangguru.com
+  - DOMAIN-SUFFIX,belajar.ruangguru.com
+  - DOMAIN-SUFFIX,midtrans.com
+  - DOMAIN-SUFFIX,api.midtrans.com
+
+  #Online Shop
+  - DOMAIN-KEYWORD,lazada.co.id
+  - DOMAIN-KEYWORD,bukalapak.com
+  - DOMAIN-KEYWORD,blibli.com
+  - DOMAIN-KEYWORD,tokopedia.com
+  - DOMAIN-KEYWORD,tokopedia.link
+  - DOMAIN-KEYWORD,amazon.com
+  - DOMAIN-KEYWORD,alibaba.com
+  - DOMAIN-KEYWORD,ebay.com
+  - DOMAIN-KEYWORD,shopify.com
+
+  # Shopee
+  - DOMAIN-KEYWORD,shopee
+  
+  # Shopee mall, rincian pesanan
+  - DOMAIN-KEYWORD,mall.shopee
+  
+  # Rule screenshot bukti barang sampai
+  - DOMAIN-KEYWORD,electronicproof.ssc.shopee
+  
+  # Shopee LIVE
+  - DOMAIN-KEYWORD,livestream.shopee
+  - DOMAIN-KEYWORD,live.shopee
+  - DOMAIN-KEYWORD,livetech.shopee
+  - DOMAIN-KEYWORD,chatroom-live.shopee
+  - IP-CIDR,202.179.138.114
+  - IP-CIDR,128.1.61.66
+  - IP-CIDR,150.109.91.8
+  - IP-CIDR,36.66.3.172
+  - IP-CIDR,138.113.116.5
+  - IP-CIDR,36.66.223.235
+  - IP-CIDR,150.109.91.7
+  - IP-CIDR,117.103.116.29
+  - DST-PORT,61947
+  - DST-PORT,64355
+  - DST-PORT,61948
+  - DST-PORT,61947
+  - DST-PORT,61947
+  - DST-PORT,61947
+  - DST-PORT,61947
+  - DST-PORT,61947
+
+  # ShopeePay
+  - DOMAIN-KEYWORD,wallet.airpay
+  - DOMAIN-KEYWORD,gw.airpay
+  
+  #Shopee SPinjam dan SPayLater
+  - DOMAIN-KEYWORD,shopeekredit
+  - DOMAIN-KEYWORD,cdn.scredit
+  
+  #Shopee Login Reward
+  - DOMAIN-KEYWORD,games.shopee
+  - DOMAIN-KEYWORD,play.shopee
+  
+  # ShopeeFood
+  - DOMAIN-KEYWORD,foody.shopee
+  
+  # Rule nilai produk
+  - DOMAIN-KEYWORD,rating.shopee
+  
+  # Shopee login, logout and checkout
+  - DOMAIN-KEYWORD,api.shopee
+  - DOMAIN-KEYWORD,c-api-bit.shopeemobile
+  - DOMAIN-KEYWORD,cf.shopee
+  - DOMAIN-KEYWORD,frd.shopee
+  
+  - DOMAIN-SUFFIX,shopee.com
+  - DOMAIN-SUFFIX,shopee.com.br
+  - DOMAIN-SUFFIX,shopee.com.my
+  - DOMAIN-SUFFIX,shopee.ph
+  - DOMAIN-SUFFIX,shopee.sg
+  - DOMAIN-SUFFIX,shopee.tw
+  - DOMAIN-SUFFIX,shopee.vn
+  - DOMAIN-SUFFIX,shopeemobile.com
+  - DOMAIN-SUFFIX,shp.ee
+
+  # > Spotify  
+  - DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
+  - DOMAIN-SUFFIX,byspotify.com
+  - DOMAIN-SUFFIX,heads4-ak-spotify-com.akamaized.net
+  - DOMAIN-SUFFIX,pscdn.co
+  - DOMAIN-SUFFIX,scdn.co
+  - DOMAIN-SUFFIX,spoti.fi
+  - DOMAIN-SUFFIX,spotify-com.akamaized.net
+  - DOMAIN-SUFFIX,spotify-everywhere.com
+  - DOMAIN-SUFFIX,spotify.com
+  - DOMAIN-SUFFIX,spotify.design
+  - DOMAIN-SUFFIX,spotifycdn.com
+  - DOMAIN-SUFFIX,spotifycdn.net
+  - DOMAIN-SUFFIX,spotifycharts.com
+  - DOMAIN-SUFFIX,spotifycodes.com
+  - DOMAIN-SUFFIX,spotifyforbrands.com
+  - DOMAIN-SUFFIX,spotifyjobs.com
+  - DOMAIN-KEYWORD,-spotify-com
+  - DOMAIN-KEYWORD,spotify.com
+  - IP-CIDR,35.186.224.47/32
+  #- PROCESS-NAM,com.spotify.music
+
+  # Deezer
+  - DOMAIN-SUFFIX,deezer.com
+  - DOMAIN-SUFFIX,dzcdn.net
+  # JOOX
+  - DOMAIN-SUFFIX,joox.com
+  - DOMAIN-KEYWORD,jooxweb-api
+
+  # > Zerotier VPN Remote
+  - DOMAIN-SUFFIX,zerotier.com
+  - DST-PORT,9993
+  - DST-PORT,29994
+  - DST-PORT,40775
+  - DST-PORT,43215
+  - IP-CIDR,84.17.53.155/23
+  - IP-CIDR,103.195.103.66/23
+  - IP-CIDR,50.7.252.138/23
+  - IP-CIDR,104.194.8.134/23
+
+  # > Chat OpenAI
+  # Client Patch
+  - DOMAIN-KEYWORD,openai.com
+  - DOMAIN-KEYWORD,chat.openai.com
