@@ -1,0 +1,203 @@
+proxy-groups:
+- name: NET-SELECT
+  type: select
+  interface-name: eth1
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - ID
+  - SG
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: SERVER - ID
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - ID
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: SERVER - SG
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - SG
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: LOAD BALANCE
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - SERVER - ID
+  - SERVER - SG
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: XL AKRAB
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - SERVER - ID
+  use:
+  - ID
+  url: http://www.gstatic.com/generate_204
+- name: SOSMED
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - SERVER - ID
+  use:
+  - ID
+  url: http://www.gstatic.com/generate_204
+- name: STREAMING
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - SERVER - ID
+  use:
+  - ID
+  url: http://www.gstatic.com/generate_204
+- name: LOKAL
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - SERVER - ID
+  use:
+  - ID
+  url: http://www.gstatic.com/generate_204
+- name: BANKING
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - SERVER - ID
+  use:
+  - ID
+  url: http://www.gstatic.com/generate_204
+- name: GAMING
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - SERVER - ID
+  - SERVER - SG
+  - LOAD BALANCE
+  use:
+  - ID
+  - SG
+  url: http://www.gstatic.com/generate_204
+- name: GAME PORT
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - SERVER - ID
+  - SERVER - SG
+  - LOAD BALANCE
+  use:
+  - ID
+  - SG
+  url: http://www.gstatic.com/generate_204
+- name: NSFW
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - SERVER - SG
+  use:
+  - SG
+  url: http://www.gstatic.com/generate_204
+- name: IKLAN
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - REJECT
+  url: http://www.gstatic.com/generate_204
+proxy-providers:
+  ID:
+    type: file
+    path: "./proxy_provider/liveon-id.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: '300'
+  SG:
+    type: file
+    path: "./proxy_provider/liveon-sg.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: '300'
+rule-providers:
+  XLAkrab:
+    type: http
+    behavior: domain
+    path: "./rule_provider/XL_Akrab.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/XL_Akrab.yaml
+    interval: '86400'
+  Sosmed:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Sosmed.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/Sosmed.yaml
+    interval: '86400'
+  Streaming:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Streaming.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/Streaming.yaml
+    interval: '86400'
+  Lokal:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Lokal.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/Lokal.yaml
+    interval: '86400'
+  Banking:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Banking.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/Banking.yaml
+    interval: '86400'
+  Gaming:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Gaming.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/Gaming.yaml
+    interval: '86400'
+  Game_Port:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Game_Port.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/Game_Port.yaml
+    interval: '86400'
+  Nsfw:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Nsfw.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/Nsfw.yaml
+    interval: '86400'
+  Iklan:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Iklan.yaml"
+    url: https://raw.githubusercontent.com/aalva16/OpenClash/main/rule_provider/Iklan.yaml
+    interval: '86400'
+rules:
+#- RULE-SET,(Rule Provider),(Proxy Provider)
+- RULE-SET,XLAkrab,XL AKRAB
+- RULE-SET,Sosmed,SOSMED
+- RULE-SET,Streaming,STREAMING
+- RULE-SET,Lokal,LOKAL
+- RULE-SET,Banking,BANKING
+- RULE-SET,Gaming,GAMING
+- RULE-SET,Game_Port,GAME PORT
+- RULE-SET,Nsfw,NSFW
+- RULE-SET,Iklan,IKLAN
+- MATCH,GLOBAL 
